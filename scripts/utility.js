@@ -20,7 +20,7 @@ for(const seat of allSeat){
         const p2 = document.createElement('p');
         p2.innerText = "Economy";
         const p3 = document.createElement('p');
-        let ticketPrice = 500;
+        let ticketPrice = 550;
         p3.innerText = ticketPrice;
         // console.log(perSeatCost);
         div.appendChild(p);
