@@ -121,7 +121,7 @@
                   <div>
                     <button class="btn bg-[#1dd1001a] font-bold text-[#1dd100] text-xl">
                       <img class="hidden lg:block" src="images/seat-green.png" alt="">
-                      <h3><span>8 </span> Seats Left</h3>
+                      <h3><span id="total-seat-quantity">8 </span> Seats Left</h3>
                     </button>
                   </div>
                 </div>
@@ -225,7 +225,7 @@
           <h2 class="text-2xl font-bold pb-10">Select Your Seat</h2>
           <div class=" space-y-2">
             <div class="flex justify-between">
-              <h4>Seat <span id="seatQuantity">0</span></h4>
+              <h4>Seat <span id="seatQuantity" class="px-2 rounded-lg bg-[#1dd100]">0</span></h4>
               <h4>Class</h4>
               <h4>Fare</h4>
             </div>
@@ -257,10 +257,60 @@
 
         <!-- btn -->
         <div>
-          <button class="input border-none w-full max-w-2xl font-bold bg-[#1dd100] text-xl">Next</button>
+          <button id="next-submit" class="input border-none w-full max-w-2xl font-bold bg-[#1dd100] text-xl">Next</button>
         </div>
         </section>
         </div>
+
+
+
+
+
+
+
+        
+        <!-- modal -->
+        <section class="text-center">
+          <!-- You can open the modal using ID.showModal() method -->
+          <button class="btn" onclick="my_modal_4.showModal()"></button>
+          <dialog id="my_modal_4" class="modal">
+            <div class="modal-box  max-w-5xl text-center">
+            <div class="text-center  mx-auto image-success">
+              <img class="text-center " src="images/Group.svg" alt="">
+
+            </div>
+            <h3 class="font-bold text-3xl pt-10 text-[#1dd100]">SUCCESS</h3>
+              <p class="py-4 text-2xl ">Thank you for Booking Our Bus Seats.</p>
+                <p class="text-xl ">We are working hard to find the best service and deals for you.</p>
+                <p class="text-xl ">Shortly you will find a confirmation in your email.</p>
+              <div>
+                <!-- class="modal-action" -->
+                <form method="dialog">
+                  <!-- if there is a button, it will close the modal -->
+                  <button class="btn btn-full text-3xl mt-10 bg-[#1dd100] text-[#FFFFFF]">Continue</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         
     </main>
 
