@@ -61,7 +61,8 @@ for(const seat of allSeat){
 
 
 
-        event.target.style.backgroundColor = "gray"
+        event.target.style.backgroundColor = "#1dd100"
+        event.target.style.Color = "#FFFFFF"
                 // event.target.classList.add('disabled');
 
 
@@ -160,7 +161,7 @@ function disableOption(id, value){
 
 function setBackgroundColorById(elementId){
     const element = document.getElementById(elementId);
-    element.classList.add('bg-orange-400');
+    element.classList.add('bg-[#1dd100]');
 }
 
 
